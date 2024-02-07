@@ -1,13 +1,15 @@
 import './App.css'
-import Footer from './components/Footer/Footer'
+import SlideOver from './components/Ecommerce/ShoppingCarts/SlideOver'
 
 
 
 function App() {
-
+  // return (
+  //   ProductList()
+  // )
   return (
     <>
-      <Footer />
+      <SlideOver />
     </>
   )
 }
