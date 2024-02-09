@@ -143,7 +143,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Example({ cartOpen, setCartOpen }) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -456,6 +456,7 @@ export default function Example() {
                     <ShoppingBagIcon
                       className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                       aria-hidden="true"
+                      onClick={() => setCartOpen(true)}
                     />
                     <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
                     <span className="sr-only">items in cart, view bag</span>
