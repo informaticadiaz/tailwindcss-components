@@ -8,11 +8,7 @@ import Footer from './components/Footer/Footer'
 import ProductList from './components/Ecommerce/ProductList'
 import ProducOverviews from './components/Ecommerce/ProductOverviews'
 import PromoSection from './components/Ecommerce/PromoSection'
-
-
-
-
-
+import Search from './components/Utils/Search/Search'
 
 function App() {
   // return (
@@ -25,12 +21,13 @@ function App() {
 
   return (
     <>
+      
       <StoreNavigation {...{ cartOpen, setCartOpen }} />
       <SlideOver  {...{ cartOpen, setCartOpen }} />
       <PromoSection />
       <ProductList />
       <ProducOverviews />
-
+      <Search />
       <Footer />
     </>
   )
