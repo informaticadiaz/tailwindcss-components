@@ -143,7 +143,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example({ cartOpen, setCartOpen }) {
+export default function StoreNavigation({ cartOpen, setCartOpen }) {
   const [open, setOpen] = useState(false)
 
   return (
