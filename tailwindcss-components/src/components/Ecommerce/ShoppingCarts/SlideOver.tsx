@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -27,7 +27,7 @@ const products = [
   // More products...
 ]
 
-export default function SlideOver({ cartOpen, setCartOpen }) {
+export default function Example({ cartOpen, setCartOpen }) {
 
 
   return (

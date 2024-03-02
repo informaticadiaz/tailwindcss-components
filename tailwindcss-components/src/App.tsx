@@ -1,7 +1,5 @@
 
 import { useState } from 'react'
-
-
 import './App.css'
 
 import SlideOver from './components/Ecommerce/ShoppingCarts/SlideOver'
@@ -11,6 +9,11 @@ import ProductList from './components/Ecommerce/ProductList'
 import ProducOverviews from './components/Ecommerce/ProductOverviews'
 import PromoSection from './components/Ecommerce/PromoSection'
 import Search from './components/Utils/Search/Search'
+
+
+
+
+
 
 function App() {
   // return (

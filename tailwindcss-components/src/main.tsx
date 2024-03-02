@@ -1,7 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { CarritoProvider } from './cart/Cart.tsx'
-
 import App from './App.tsx'
 import './index.css'
 
@@ -11,8 +9,6 @@ const router = createHashRouter(Router)
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <CarritoProvider>
-      <App />
-    </CarritoProvider>
+    <App />
   </React.StrictMode>,
 )
