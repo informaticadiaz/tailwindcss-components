@@ -1,7 +1,13 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useContext } from "react";
 
 // Creamos el contexto
 const Contexto = createContext();
+
+// Hook personalizado para acceder al contexto del carrito de compras
+// eslint-disable-next-line react-refresh/only-export-components
+export function useContext() {
+  return useContext(Contexto);
+}
 
 // Creamos un provider que va a envolver a los componentes hijos
 const ContextoProvider = ({ children }) => {
