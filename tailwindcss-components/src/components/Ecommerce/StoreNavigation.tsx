@@ -12,6 +12,7 @@
   }
   ```
 */
+import { UsarContexto } from "@/context/context";
 import { Fragment, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import {
@@ -151,12 +152,13 @@ const navigation = {
   ],
 };
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example({ cartOpen, setCartOpen }) {
+export default function Example() {
   const [open, setOpen] = useState(false);
+  const { setCartOpen } = UsarContexto();
 
   return (
     <div className="bg-white sticky top-0 z-10">
