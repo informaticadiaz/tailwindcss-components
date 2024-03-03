@@ -1,5 +1,3 @@
-
-import { useState } from 'react'
 import './App.css'
 
 import SlideOver from './components/Ecommerce/ShoppingCarts/SlideOver'
@@ -19,20 +17,18 @@ function App() {
   // return (
   //   ProductList()
   // )
-
-  const [cartOpen, setCartOpen] = useState(false)
-
-
-
   return (
     <>
-      
-      <StoreNavigation {...{ cartOpen, setCartOpen }} />
-      <SlideOver  {...{ cartOpen, setCartOpen }} />
+      {/* usa cartOpen, setCartOpen */}
+      <StoreNavigation />
+      {/* usa cartOpen, setCartOpen */}
+      <SlideOver />
       <PromoSection />
       <ProductList />
       <ProducOverviews />
-      <Search />
+      <Search isOpen={false} onClose={function (): void {
+        throw new Error('Function not implemented.')
+      } } />
       <Footer />
     </>
   )
