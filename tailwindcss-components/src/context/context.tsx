@@ -5,7 +5,7 @@ const Contexto = createContext();
 
 // Hook personalizado para acceder al contexto del carrito de compras
 // eslint-disable-next-line react-refresh/only-export-components
-export function useContext() {
+export function UsarContexto() {
   return useContext(Contexto);
 }
 
