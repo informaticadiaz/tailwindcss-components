@@ -1,4 +1,9 @@
-import React, { useState } from 'react';
+{/* 
+este componente necesita revision esta abierta 
+la participacion para trabajar sobre el 
+*/}
+
+import { useState } from 'react';
 
 interface ModalProps {
   isOpen: boolean;
@@ -7,12 +12,12 @@ interface ModalProps {
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [searchResults, setSearchResults] = useState<any[]>([]);
+  // const [searchResults, setSearchResults] = useState<any[]>([]);
 
-  const handleSearch = (query: string) => {
-    // Perform search logic here
-    // Update searchResults state with the search results
-  };
+  // const handleSearch = (query: string) => {
+  //   // Perform search logic here
+  //   // Update searchResults state with the search results
+  // };
 
   return (
     <div className={`fixed top-0 left-0 w-full h-full flex items-center justify-center ${isOpen ? '' : 'hidden'}`}>
@@ -25,11 +30,11 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           placeholder="Search..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          onKeyPress={(e) => {
-            if (e.key === 'Enter') {
-              handleSearch(searchQuery);
-            }
-          }}
+          // onKeyPress={(e) => {
+          //   if (e.key === 'Enter') {
+          //     handleSearch(searchQuery);
+          //   }
+          // }}
         />
         {/* Display search results here */}
       </div>
