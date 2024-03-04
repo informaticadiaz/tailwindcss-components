@@ -1,0 +1,12 @@
+{
+    "color": {
+        "background": {
+            "primary": {
+                "value": "#fff"
+            },
+            "secondary": {
+                "value": "#ccc"
+            }
+        }
+    }
+}
