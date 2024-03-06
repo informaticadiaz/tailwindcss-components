@@ -21,7 +21,7 @@ export default function ThreeCoumn() {
             {/* Contenedor */}
             <div className="">
               {/* img rounded */}
-              <img src="" alt="" className="" />
+              <img src="./work.webp" alt="" className="" />
             </div>
             {/* conenedor */}
             <div>
