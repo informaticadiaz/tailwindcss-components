@@ -15,13 +15,13 @@ export default function ThreeCoumn() {
           <p className="text-gray-600 leading-8 text-lg mt-2">Learn how to grow your business with expert advice</p>
         </div>
         {/* div grid */}
-        <div className="">
+        <div className="grid gap-y-20 gap-x-8 grid-cols-1 max-w-2xl mt-16 mx-auto">
           {/* article flex */}
-          <article className="">
+          <article className="flex justify-between items-start flex-col">
             {/* Contenedor */}
-            <div className="">
+            <div className="w-full relative">
               {/* img rounded */}
-              <img src="./work.webp" alt="" className="" />
+              <img src="./work.webp" alt="" className="object-cover rounded-2xl w-full aspect-[16/9] max-w-full h-auto" />
             </div>
             {/* conenedor */}
             <div>
