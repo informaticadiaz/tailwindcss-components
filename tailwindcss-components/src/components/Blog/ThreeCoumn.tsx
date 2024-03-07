@@ -8,14 +8,14 @@ nombre del componente rhree column with images
 
 export default function ThreeCoumn() {
   return (
-    <div className="py-24 bg-white">
-      <div className="px-6 mx-auto max-w-7xl">
+    <div className="py-24 bg-white sm:py-32">
+      <div className="px-6 mx-auto max-w-7xl lg:px-8 lg:max-w-7xl">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-gray-900 tracking-tight font-bold text-3xl">From the blog</h2>
+          <h2 className="text-gray-900 tracking-tight font-bold text-3xl sm:text-4xl">From the blog</h2>
           <p className="text-gray-600 leading-8 text-lg mt-2">Learn how to grow your business with expert advice</p>
         </div>
         {/* div grid */}
-        <div className="grid gap-y-20 gap-x-8 grid-cols-1 max-w-2xl mt-16 mx-auto">
+        <div className="grid gap-y-20 gap-x-8 grid-cols-1 max-w-2xl mt-16 mx-auto lg:grid-cols-3 lg:max-w-none lg:mx-0">
           {/* article flex */}
           <article className="flex justify-between items-start flex-col">
             {/* Contenedor */}
@@ -24,57 +24,136 @@ export default function ThreeCoumn() {
               <img src="./work.webp" alt="" className="object-cover rounded-2xl w-full aspect-[16/9] max-w-full h-auto" />
             </div>
             {/* conenedor */}
-            <div>
+            <div className="max-w-xl">
               {/* flex - data link */}
-              <div className="">
-                <time dateTime="2020-03-16" className="">
+              <div className="text-xs gap-x-4 items-center flex mt-8 ">
+                <time dateTime="2020-03-16" className="text-gray-500">
                   Mar 16, 2020
                 </time>
-                <a href="#" className="ab eg ads aio are arp awd axr bib">
+                <a href="#" className="text-gray-600 font-medium px-3">
                   Marketing
                 </a>
               </div>
-              <div className="">
-                <h3 className="lf avy awf awo axu brl">
+              <div className="relative">
+                {/* titulo y parrafo */}
+                <h3 className="text-gray-900 font-semibold leading-6 text-lg mt-3">
                   <a href="#">
-                    <span className="aa ak"></span>Boost your conversion rate
+                    <span className=""></span>Boost your conversion rate
                   </a>
                 </h3>
-              </div>
-              {/* titulo y parrafo */}
-              <div>
-                <h3>
-                  <a href="">
-                    <span></span>
-                    "Boost your conversion rate"
-                  </a>
-                </h3>
-                <p>
-                  Illo sint voluptas. Error voluptates culpa eligendi. Hic vel
-                  totam vitae illo. Non aliquid explicabo necessitatibus unde.
-                  Sed exercitationem placeat consectetur nulla deserunt vel.
-                  Iusto corrupti dicta.
+                {/* parrafo */}
+                <p className="mt-5 text-gray-600 text-sm">
+                Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.
                 </p>
               </div>
             </div>
             {/* flex -container */}
-            <div>
+            <div className="flex items-center relative mt-8 gap-x-4">
               {/* photo profile */}
-              <img src="" alt="" />
-              <div>
-                <p>
+              <img src="./user.webp" alt="" className="rounded-full w-10 h-10  "/>
+              <div className="text-sm leading-6">
+                <p className="text-gray-900 font-semibold ">
                   <a href="#">
                     <span></span>
                     Michael Foster
                   </a>
                 </p>
-                <p>Co-Founder / CTO</p>
+                <p className="text-gray-600">Co-Founder / CTO</p>
               </div>
             </div>
           </article>
-          <article></article>
-          <article></article>
+          <article className="flex justify-between items-start flex-col">
+            {/* Contenedor */}
+            <div className="w-full relative">
+              {/* img rounded */}
+              <img src="./work.webp" alt="" className="object-cover rounded-2xl w-full aspect-[16/9] max-w-full h-auto" />
+            </div>
+            {/* conenedor */}
+            <div className="max-w-xl">
+              {/* flex - data link */}
+              <div className="text-xs gap-x-4 items-center flex mt-8 ">
+                <time dateTime="2020-03-16" className="text-gray-500">
+                  Mar 16, 2020
+                </time>
+                <a href="#" className="text-gray-600 font-medium px-3">
+                  Marketing
+                </a>
+              </div>
+              <div className="relative">
+                {/* titulo y parrafo */}
+                <h3 className="text-gray-900 font-semibold leading-6 text-lg mt-3">
+                  <a href="#">
+                    <span className=""></span>Boost your conversion rate
+                  </a>
+                </h3>
+                {/* parrafo */}
+                <p className="mt-5 text-gray-600 text-sm">
+                Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.
+                </p>
+              </div>
+            </div>
+            {/* flex -container */}
+            <div className="flex items-center relative mt-8 gap-x-4">
+              {/* photo profile */}
+              <img src="./user.webp" alt="" className="rounded-full w-10 h-10  "/>
+              <div className="text-sm leading-6">
+                <p className="text-gray-900 font-semibold ">
+                  <a href="#">
+                    <span></span>
+                    Michael Foster
+                  </a>
+                </p>
+                <p className="text-gray-600">Co-Founder / CTO</p>
+              </div>
+            </div>
+          </article>
+          <article className="flex justify-between items-start flex-col">
+            {/* Contenedor */}
+            <div className="w-full relative">
+              {/* img rounded */}
+              <img src="./work.webp" alt="" className="object-cover rounded-2xl w-full aspect-[16/9] max-w-full h-auto" />
+            </div>
+            {/* conenedor */}
+            <div className="max-w-xl">
+              {/* flex - data link */}
+              <div className="text-xs gap-x-4 items-center flex mt-8 ">
+                <time dateTime="2020-03-16" className="text-gray-500">
+                  Mar 16, 2020
+                </time>
+                <a href="#" className="text-gray-600 font-medium px-3">
+                  Marketing
+                </a>
+              </div>
+              <div className="relative">
+                {/* titulo y parrafo */}
+                <h3 className="text-gray-900 font-semibold leading-6 text-lg mt-3">
+                  <a href="#">
+                    <span className=""></span>Boost your conversion rate
+                  </a>
+                </h3>
+                {/* parrafo */}
+                <p className="mt-5 text-gray-600 text-sm">
+                Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.
+                </p>
+              </div>
+            </div>
+            {/* flex -container */}
+            <div className="flex items-center relative mt-8 gap-x-4">
+              {/* photo profile */}
+              <img src="./user.webp" alt="" className="rounded-full w-10 h-10  "/>
+              <div className="text-sm leading-6">
+                <p className="text-gray-900 font-semibold ">
+                  <a href="#">
+                    <span></span>
+                    Michael Foster
+                  </a>
+                </p>
+                <p className="text-gray-600">Co-Founder / CTO</p>
+              </div>
+            </div>
+          </article>
         </div>
+        
       </div>
     </div>
   );
