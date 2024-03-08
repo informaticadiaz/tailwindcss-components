@@ -8,7 +8,8 @@ import ProducOverviews from './components/Ecommerce/ProductOverviews'
 import PromoSection from './components/Ecommerce/PromoSection'
 import Search from './components/Utils/Search/Search'
 import Blog from './components/Blog/Blog'
-import ThreeCoumn from './components/Blog/ThreeCoumn'
+import ThreeCoumn from './components/Blog/ThreeColumn'
+import ThreecolumnmBGImg from './components/Blog/ThreecolumnmBGImg'
 
 
 
@@ -33,7 +34,8 @@ function App() {
       } } />
     <Footer />*/}
     {/* <Blog /> */}
-    <ThreeCoumn />
+      {/* <ThreeCoumn /> */}
+      <ThreecolumnmBGImg />
     </>
   )
 }
