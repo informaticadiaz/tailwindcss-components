@@ -38,11 +38,11 @@ export default function ThreeCoumn() {
                 {/* titulo y parrafo */}
                 <h3 className="text-gray-900 font-semibold leading-6 text-lg mt-3">
                   <a href="#">
-                    <span className=""></span>Boost your conversion rate
+                    <span className="absolute inset-0"></span>Boost your conversion rate
                   </a>
                 </h3>
                 {/* parrafo */}
-                <p className="mt-5 text-gray-600 text-sm">
+                <p className="mt-5 text-gray-600 text-sm line-clamp-3">
                 Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.
                 </p>
               </div>
@@ -83,12 +83,12 @@ export default function ThreeCoumn() {
                 {/* titulo y parrafo */}
                 <h3 className="text-gray-900 font-semibold leading-6 text-lg mt-3">
                   <a href="#">
-                    <span className=""></span>Boost your conversion rate
+                    <span className="absolute inset-0"></span>How to use search engine optimization to drive sales
                   </a>
                 </h3>
                 {/* parrafo */}
-                <p className="mt-5 text-gray-600 text-sm">
-                Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.
+                <p className="mt-5 text-gray-600 text-sm line-clamp-3">
+                Optio cum necessitatibus dolor voluptatum provident commodi et. Qui aperiam fugiat nemo cumque.
                 </p>
               </div>
             </div>
@@ -128,12 +128,12 @@ export default function ThreeCoumn() {
                 {/* titulo y parrafo */}
                 <h3 className="text-gray-900 font-semibold leading-6 text-lg mt-3">
                   <a href="#">
-                    <span className=""></span>Boost your conversion rate
+                    <span className="absolute inset-0"></span>Improve your customer experience
                   </a>
                 </h3>
                 {/* parrafo */}
-                <p className="mt-5 text-gray-600 text-sm">
-                Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.
+                <p className="mt-5 text-gray-600 text-sm line-clamp-3">
+                Cupiditate maiores ullam eveniet adipisci in doloribus nulla minus. Voluptas iusto libero adipisci rem et corporis. Nostrud sint anim sunt aliqua. Nulla eu labore irure incididunt velit cillum quis magna dolore.
                 </p>
               </div>
             </div>
