@@ -10,6 +10,7 @@ import Search from './components/Utils/Search/Search'
 import Blog from './components/Blog/Blog'
 import ThreeCoumn from './components/Blog/ThreeColumn'
 import ThreecolumnmBGImg from './components/Blog/ThreecolumnmBGImg'
+import SingleColmn from './components/Blog/SingleColmn'
 
 
 
@@ -35,7 +36,8 @@ function App() {
     <Footer />*/}
     {/* <Blog /> */}
       {/* <ThreeCoumn /> */}
-      <ThreecolumnmBGImg />
+      {/* <ThreecolumnmBGImg /> */}
+      <SingleColmn />
     </>
   )
 }
