@@ -12,6 +12,7 @@ import ThreeCoumn from "./components/Blog/ThreeColumn";
 import ThreecolumnmBGImg from "./components/Blog/ThreecolumnmBGImg";
 import SingleColmn from "./components/Blog/SingleColmn";
 import SingleColumnImg from "./components/Blog/SingleColumnImg";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   // return (
@@ -34,7 +35,8 @@ function App() {
       {/* <ThreeCoumn /> */}
       {/* <ThreecolumnmBGImg /> */}
       {/* <SingleColmn /> */}
-      <SingleColumnImg />
+      {/* <SingleColumnImg /> */}
+      {/* <Contact /> */}
     </>
   );
 }
