@@ -1,18 +1,24 @@
 import "./App.css";
 
-import SlideOver from "./components/Ecommerce/ShoppingCarts/SlideOver";
-import StoreNavigation from "./components/Ecommerce/StoreNavigation";
 import Footer from "./components/Footer/Footer";
-import ProductList from "./components/Ecommerce/ProductList";
-import ProducOverviews from "./components/Ecommerce/ProductOverviews";
-import PromoSection from "./components/Ecommerce/PromoSection";
 import Search from "./components/Utils/Search/Search";
+
+// Blog
 import Blog from "./components/Blog/Blog";
 import ThreeCoumn from "./components/Blog/ThreeColumn";
 import ThreecolumnmBGImg from "./components/Blog/ThreecolumnmBGImg";
 import SingleColmn from "./components/Blog/SingleColmn";
 import SingleColumnImg from "./components/Blog/SingleColumnImg";
+//Contact
 import Contact from "./components/Contact/Contact";
+import ContactCard from "./components/Contact/ContactCard";
+// ecommerce
+import ProductCard from "./components/Ecommerce/ProductCard";
+import ProductList from "./components/Ecommerce/ProductList";
+import ProducOverviews from "./components/Ecommerce/ProductOverviews";
+import PromoSection from "./components/Ecommerce/PromoSection";
+import SlideOver from "./components/Ecommerce/ShoppingCarts/SlideOver";
+import StoreNavigation from "./components/Ecommerce/StoreNavigation";
 
 function App() {
   // return (
@@ -21,7 +27,7 @@ function App() {
   return (
     <>
       {/* usa cartOpen, setCartOpen */}
-      {/*<StoreNavigation />*/}
+      {/* <StoreNavigation /> */}
       {/* usa cartOpen, setCartOpen */}
       {/*<SlideOver />
       <PromoSection />
@@ -37,6 +43,7 @@ function App() {
       {/* <SingleColmn /> */}
       {/* <SingleColumnImg /> */}
       {/* <Contact /> */}
+      <ContactCard />
     </>
   );
 }
