@@ -1,18 +1,19 @@
-import { Tab } from "@headlessui/react";
-import Start from "../assets/Start";
+import { Tab } from '@headlessui/react';
+import Start from '../assets/Start';
+import Abc from '../assets/Abc';
 
 const tabsList = [
   {
-    name: "Work",
-    imageSrc: "./work.webp",
+    name: 'Work',
+    imageSrc: './work.webp',
   },
   {
-    name: "User",
-    imageSrc: "./user.webp",
+    name: 'User',
+    imageSrc: './user.webp',
   },
   {
-    name: "Code",
-    imageSrc: "./code.webp",
+    name: 'Code',
+    imageSrc: './code.webp',
   },
   {
     name: 'Avatar',
@@ -99,7 +100,14 @@ export default function ZipTote() {
                 </h3>
                 {/* HedlessUI */}
               </div>
-              
+              <div className="mt-10 flex">
+                <button type="submit" className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white sm:w-full">
+                  Add to bag
+                </button>
+                <button type="submit" className="ml-4 flex items-center justify-center rounded-md px-3 py-3 text-gray-400">
+                  <Abc />        
+                </button>
+              </div>
             </form>
           </div>
         </div>

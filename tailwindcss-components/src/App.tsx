@@ -50,10 +50,10 @@ function App() {
       {/* <SingleColumnImg /> */}
       {/* <Contact /> */}
       {/* <ContactCard /> */}
-      {/* <ZipTote /> */}
+      <ZipTote />
       {/* <Tabs /> */}
       {/* <TabsMap /> */}
-      <Radio />
+      {/* <Radio /> */}
     </>
   );
 }
