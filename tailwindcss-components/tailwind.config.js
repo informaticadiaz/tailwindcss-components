@@ -14,5 +14,7 @@ export default {
   plugins: [
     // eslint-disable-next-line no-undef
     require('@tailwindcss/aspect-ratio'),
+    // eslint-disable-next-line no-undef
+    require('@headlessui/tailwindcss'),
   ],
 }

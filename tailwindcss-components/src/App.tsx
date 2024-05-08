@@ -19,6 +19,12 @@ import ProducOverviews from "./components/Ecommerce/ProductOverviews";
 import PromoSection from "./components/Ecommerce/PromoSection";
 import SlideOver from "./components/Ecommerce/ShoppingCarts/SlideOver";
 import StoreNavigation from "./components/Ecommerce/StoreNavigation";
+//Product
+import ZipTote from "./components/Product/ZipTote";
+import Tabs from "./components/practicas/headlessui/Tabs";
+import TabsMap from "./components/practicas/headlessui/TabsMap";
+// Practica
+import Radio from "./components/practicas/headlessui/Radio";
 
 function App() {
   // return (
@@ -43,7 +49,11 @@ function App() {
       {/* <SingleColmn /> */}
       {/* <SingleColumnImg /> */}
       {/* <Contact /> */}
-      <ContactCard />
+      {/* <ContactCard /> */}
+      {/* <ZipTote /> */}
+      {/* <Tabs /> */}
+      {/* <TabsMap /> */}
+      <Radio />
     </>
   );
 }
