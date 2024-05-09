@@ -26,18 +26,19 @@ import TabsMap from "./components/practicas/headlessui/TabsMap";
 // Practica
 import Radio from "./components/practicas/headlessui/Radio";
 import Disclo from "./components/practicas/headlessui/Disclo";
+import ArrayStates from "./components/practicas/ArrayStates";
 
 function App() {
   // return (
   //   ProductList()
   // )
   return (
-    <>
+    <div className="h-screen bg-slate-900">
       {/* usa cartOpen, setCartOpen */}
       {/* <StoreNavigation /> */}
       {/* usa cartOpen, setCartOpen */}
       {/*<SlideOver />
-      <PromoSection />
+      <PromoSection />|||
       <ProductList />
       <ProducOverviews />
       <Search isOpen={false} onClose={function (): void {
@@ -56,8 +57,9 @@ function App() {
       {/* <Tabs /> */}
       {/* <TabsMap /> */}
       {/* <Radio /> */}
-      <Disclo />
-    </>
+      {/* <Disclo /> */}
+      <ArrayStates />
+    </div>
   );
 }
 
