@@ -25,6 +25,7 @@ import Tabs from "./components/practicas/headlessui/Tabs";
 import TabsMap from "./components/practicas/headlessui/TabsMap";
 // Practica
 import Radio from "./components/practicas/headlessui/Radio";
+import Disclo from "./components/practicas/headlessui/Disclo";
 
 function App() {
   // return (
@@ -50,10 +51,12 @@ function App() {
       {/* <SingleColumnImg /> */}
       {/* <Contact /> */}
       {/* <ContactCard /> */}
-      <ZipTote />
+      {/* <ZipTote /> */}
+      {/* Practica */}
       {/* <Tabs /> */}
       {/* <TabsMap /> */}
       {/* <Radio /> */}
+      <Disclo />
     </>
   );
 }

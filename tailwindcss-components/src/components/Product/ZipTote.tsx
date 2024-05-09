@@ -105,10 +105,14 @@ export default function ZipTote() {
                   Add to bag
                 </button>
                 <button type="submit" className="ml-4 flex items-center justify-center rounded-md px-3 py-3 text-gray-400">
-                  <Abc />        
+                  <Abc />
+                  <span className="sr-only">Add to favorite</span>
                 </button>
               </div>
             </form>
+            <section aria-labelledby="details-heading" className="mt-12">
+              <h2 id='details-heading' className="sr-only">Additional detials</h2>
+            </section>
           </div>
         </div>
       </div>
