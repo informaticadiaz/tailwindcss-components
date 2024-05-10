@@ -1,6 +1,5 @@
 import Start from '../assets/Start';
 import Abc from '../assets/Abc';
-import { useState } from 'react';
 import {
   Tab,
   TabGroup,
@@ -15,26 +14,26 @@ import { PlusIcon, MinusIcon } from '@heroicons/react/20/solid';
 
 const tabsList = [
   {
-    name: "Work",
-    imageSrc: "./work.webp",
+    name: 'Work',
+    imageSrc: './work.webp',
   },
   {
-    name: "User",
-    imageSrc: "./user.webp",
+    name: 'User',
+    imageSrc: './user.webp',
   },
   {
-    name: "Code",
-    imageSrc: "./code.webp",
+    name: 'Code',
+    imageSrc: './code.webp',
   },
   {
-    name: "Avatar",
-    imageSrc: "./avatar.webp",
+    name: 'Avatar',
+    imageSrc: './avatar.webp',
   },
 ];
 
 const buyDetails = [
   {
-    tittle: "Features",
+    tittle: 'Features',
     items: (
       <ul className="list-disc pl-6">
         <li>Multiple strap configurations</li>
@@ -48,7 +47,7 @@ const buyDetails = [
     ),
   },
   {
-    tittle: "Care",
+    tittle: 'Care',
     items: (
       <ul className="list-disc pl-6">
         <li>Spot clean as needed</li>
@@ -59,7 +58,7 @@ const buyDetails = [
     ),
   },
   {
-    tittle: "Shipping",
+    tittle: 'Shipping',
     items: (
       <ul className="list-disc pl-6">
         <li>Free shipping on orders over $300</li>
@@ -70,7 +69,7 @@ const buyDetails = [
     ),
   },
   {
-    tittle: "Returns",
+    tittle: 'Returns',
     items: (
       <ul className="list-disc pl-6">
         <li>Easy return requests</li>
@@ -83,16 +82,12 @@ const buyDetails = [
 ];
 
 export default function ZipTote() {
-  const [open, setOpen] = useState(false);
-
-  const toggleAbierto = () => setOpen(!open);
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
           <div className="flex flex-col-reverse">
             <TabGroup>
-              
               {/* Tab panel */}
               <TabPanels>
                 {tabsList.map((tab, index) => (
@@ -111,7 +106,7 @@ export default function ZipTote() {
                   {tabsList.map((tab, index) => (
                     <Tab
                       key={index}
-                      className="relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900"
+                      className="relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 data-[selected]:bg-blue-500"
                     >
                       <span className="sr-only">{tab.name}</span>
                       <span className="absolute inset-0 overflow-hidden rounded-md">
@@ -180,30 +175,32 @@ export default function ZipTote() {
                 </button>
               </div>
             </form>
-            
-        <div className="mx-auto w-full max-w-lg divide-y divide-white/5 rounded-xl bg-white/5 text-gray-700">
-          {buyDetails.map((item, index) => (
-            <Disclosure as="div" key={index} className="p-6">
-              <DisclosureButton
-              className="group flex w-full items-center justify-between"
-              onClick={toggleAbierto}
-            >
-                <span className="text-sm/6 font-medium text-gray-700">
-                  {item.tittle}
-                </span>
-                <div className={`size-5 fill-white/60 text-gray-700 group-data-[open]:rotate-180 group-data-[hover]:fill-white/50 ${open ? '' : 'rotate-180 transform'}`}>
-                {open ? <MinusIcon /> : <PlusIcon />}
-              </div>
-              </DisclosureButton>
-              <DisclosurePanel className="mt-2 text-sm/5 text-gray-700">
-                {item.items}
-            </DisclosurePanel>
-            </Disclosure>  
-          ))}
-        </div>
-      </div>
+
+            <div className="mt-6 mx-auto w-full divide-y border-t text-gray-700">
+              {buyDetails.map((item, index) => (
+                <Disclosure as="div" key={index} className="p-6">
+                  {({ open }) => (
+                    <>
+                      <DisclosureButton className="group flex w-full items-center justify-between">
+                        <span className="font-medium text-gray-700  group-data-[open]:text-indigo-500 group-data-[hover]:fill-white/50 ${open ? '' : 'rotate-180 transform'}">
+                          {item.tittle}
+                        </span>
+                        <div
+                          className="size-5 text-gray-700 group-data-[open]:text-indigo-500">
+                          {open ? <MinusIcon /> : <PlusIcon />}
+                        </div>
+                      </DisclosureButton>
+                      <DisclosurePanel className="mt-2 text-sm/5 text-gray-700">
+                        {item.items}
+                      </DisclosurePanel>
+                    </>
+                  )}
+                </Disclosure>
+              ))}
+            </div>
           </div>
         </div>
       </div>
+    </div>
   );
 }
